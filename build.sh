@@ -18,7 +18,7 @@ flink_archive="$( basename $FLINK_URL )"
 flink_unzip_folder="${flink_service_name_lower}-${FLINK_VERSION}"
 flink_folder_lower="$( basename $flink_archive .tgz )"
 flink_parcel_folder="$( echo $flink_folder_lower | tr '[:lower:]' '[:upper:]')"
-flink_parcel_name="$flink_parcel_folder-el${OS_VERSION}.parcel"
+flink_parcel_name="$flink_parcel_folder-${OS_VERSION}.parcel"
 flink_built_folder="${flink_parcel_folder}_build"
 flink_csd_build_folder="flink_csd_build"
 
